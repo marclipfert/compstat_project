@@ -1,0 +1,13 @@
+% Encoding: UTF-8
+
+@Article{cebi2007,
+  author  = {Cebi, Merve},
+  journal = {Journal of Human Resources},
+  title   = {Locus of Control and Human Capital Investment Revisited},
+  year    = {2007},
+  number  = {4},
+  pages   = {919-932},
+  volume  = {42},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

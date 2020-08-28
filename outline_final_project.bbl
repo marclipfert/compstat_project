@@ -1,0 +1,58 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{heineck2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8de80ec832b3a838f81b1ccc3768b3b4}{%
+           family={Heineck},
+           familyi={H\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=57cecda43ef298e64c87f877c84f0f43}{%
+           family={Anger},
+           familyi={A\bibinitperiod},
+           given={Silke},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \strng{fullhash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \strng{bibnamehash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \strng{authorbibnamehash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \strng{authornamehash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \strng{authorfullhash}{0b510061667c0f4e2d03c0ea850e1c11}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Labour Economics}
+      \field{number}{3}
+      \field{title}{The returns to cognitive abilities and personality traits in Germany}
+      \field{volume}{17}
+      \field{year}{2010}
+      \field{pages}{535\bibrangedash 546}
+      \range{pages}{12}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

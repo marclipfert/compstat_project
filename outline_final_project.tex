@@ -1,0 +1,87 @@
+%%%%%%%%%%%%
+% Preamble %
+%%%%%%%%%%%%
+
+\documentclass[11pt, a4paper, leqno]{article}
+\usepackage{a4wide}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{float, afterpage, rotating, graphicx}
+\usepackage{epstopdf}
+\usepackage{longtable, booktabs, tabularx}
+\usepackage{fancyvrb, moreverb, relsize}
+\usepackage{eurosym, calc}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, bm}
+\usepackage{caption}
+\usepackage{mdwlist}
+\usepackage{xfrac}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{minibox}
+\usepackage{bm}
+% \usepackage{endfloat} % Enable to move tables / figures to the end. Useful for some submissions.
+
+% Set margins
+\usepackage[a4paper, left=3cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+% Specify Bibliography Stlye and Options
+\usepackage[backend=biber, 
+style=authoryear,
+maxbibnames=10, 
+firstinits = true,  
+maxcitenames=2,
+uniquename=false]{biblatex}
+\addbibresource{literature.bib} 
+
+% Hyperref Options
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    anchorcolor=black,
+    citecolor=black,
+    filecolor=black,
+    menucolor=black,
+    runcolor=black,
+    urlcolor=black
+}
+
+% Options for adjusting paragraphs at page breaks
+% i.e., not a single line at the top of page and not single lines at the bottom
+\widowpenalty=10000
+\clubpenalty=10000
+
+% Specify line spacing and indentation
+\setlength{\parskip}{1ex} % space between paragraphs
+\setlength{\parindent}{0ex} % no identation
+\setstretch{1.5} % 1.5 line spacing
+
+% Sets fontsize of footnotes to 8pt:
+% just erase this to set it to 10 pt
+% (given standard font size 12pt)
+\renewcommand{\footnotesize}{\scriptsize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Start of Document    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Final Project in Computational Statistics -- Outline}
+\date{\today}
+\author{Marc Lipfert \\ (Matriculation Number: 3220513)}
+\maketitle
+
+\begin{center}
+	\textbf{Principal Component Analysis}
+\end{center}
+
+The overarching topic of my final project is Principal Component Analysis (PCA). Therefore, the first part of my notebook will be devoted to introducing the method. In particular, I will outline its usefulness with respect to dimensionality reduction. 
+
+As a second step, I will propose a context in which PCA can be applied. Over the last two decades, economic research has increasingly recognised the importance of personality traits for labour market outcomes. There is an extensive literature that emphasises the role of a particular non-cognitive trait: locus of control (LOC). It captures the extent to which an individual believes that her life can be shaped by her own actions and decisions (internal LOC) or is instead contingent on outside factors beyond her control (external LOC). The latter sentiment, i.e. the conviction that one's course of life depends on fate or luck, has been found to be detrimental for labour market success. Measures of LOC are usually elicited using multiple survey items which are designed to cover different facets of LOC. Each item is usually scored on a Likert scale. 
+
+In the early literature, researchers then simply took the (standardised) average of the item scores as their measure of LOC. For instance, \textcite{heineck2010} study the returns to cognitive and non-cognitive personality traits using survey data from the German Socio-Economic Panel (SOEP). The SOEP comprises 10 items for LOC, each of them scored on a 10-point Likert scale. The authors then take a standardized average and obtain a significantly negative effect of external LOC on wages. 
+
+In a simulation study, I will compare this approach of simply averaging item scores with PCA. The setting from the SOEP serves a starting point with respect to the number of items and other relevant aspects. The appropriateness of the respective approaches is evaluated based on the predictive performance (Mean Squared Error). If time and space constraints permit, I will additionally perform this analysis using actual data from the SOEP in place of simulated data.
+
+\end{document}
